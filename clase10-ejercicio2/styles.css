@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b5baca;
+  margin: 0;
+  padding: 2rem;
+}
+
+.loading {
+  width: 120px;
+  height: 22px;
+  border-radius: 20px;
+  color: #4a3bce;
+  border: 2px solid;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.loading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: 2px;
+  left: 0;
+  width: 0;
+  border-radius: inherit;
+  background: currentColor;
+  animation: loader 2s infinite;
+  box-shadow: -5px 0 10px 5px #746cebc4;
+}
+
+@keyframes loader {
+  100% {
+    width: 97%;
+  }
+}

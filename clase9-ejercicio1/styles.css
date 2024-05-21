@@ -1,0 +1,41 @@
+body {
+background: linear-gradient(to left, crimson, goldenrod);
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    text-transform: capitalize;    
+}
+
+h1::before {
+    content: "🔎 ";
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+button {
+    background-color: #ffd700;
+    padding: 0.4rem 1rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.container {
+    font-size: large;
+}
+
+section form label {
+    font-weight: bold;
+}
+
+#searchbar {
+    width: 12.5rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}

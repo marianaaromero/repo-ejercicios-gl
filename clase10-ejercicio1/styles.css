@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    position: relative;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    background-color: #65c0c7;
+    transition: background-color 0.2s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover {
+    background-color: #62bac0a4;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    display: block;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #ecfdfd;
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+
+.hamburger{
+    width: 50%;
+}
+.hamburger::before {
+    top: -8px;
+    width: 100%;
+}
+
+.hamburger::after {
+    bottom: -8px;
+    width: 100%;
+}
+
+.button:focus .hamburger {
+    transform: rotate(-45deg);
+}
+
+.button:focus .hamburger::before {
+    transform: translateY(8px) rotate(-90deg) ;
+}
+
+.button:focus .hamburger::after {
+    opacity: 0;
+}
